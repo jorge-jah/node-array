@@ -22,9 +22,12 @@ fastify.get("/produto/:id", produtoService.buscarProdutoPorId);
 
 fastify.post("/produto/", produtoService.criarProduto);
 
-fastify.patch("/produto/id/", produtoService.editarProdutoPorId);
+fastify.patch("/produto/:id", produtoService.atualizarProdutoParcial);
 
-fastify.delete("/produto/id/", produtoService.removerProdutoPorId);
+fastify.put("/produto/:id", produtoService.editarProdutoPorId);
+
+fastify.delete("/produto/:id", produtoService.removerProdutoPorId);
+fastify.delete("/produtos", produtoService.removerTodosProdutos);
 
 fastify.listen({ port: PORT }, (err, address) => {
   if (err) throw err;

@@ -8,11 +8,28 @@ POST http://localhost:3000/produto/
 Content-Type: application/json
 
 {
-    "id": 14,
-    "name": "Produto 4", 
+    "id": 18,
+    "name": "Produto 18", 
     "preco": 355
 }
 
 ###
+// Buscar por id
 GET http://localhost:3000/produto/14
 # 
+
+###
+// Atualizar parcialmente
+PATCH http://localhost:3000/produto/18
+Content-Type: application/json
+
+{
+    "name": "Produto atualizado de novo"
+    
+}
+
+###
+DELETE  http://localhost:3000/produto/18
+
+###
+DELETE  http://localhost:3000/produtos
