@@ -8,8 +8,6 @@ POST http://localhost:3000/produto/
 Content-Type: application/json
 
 {
-    "id": 18,
-    "name": "Produto 18", 
     "preco": 355
 }
 
@@ -25,11 +23,10 @@ Content-Type: application/json
 
 {
     "name": "Produto atualizado de novo"
-    
 }
 
 ###
-DELETE  http://localhost:3000/produto/18
+DELETE  http://localhost:3000/produto/1
 
 ###
 DELETE  http://localhost:3000/produtos

@@ -1,0 +1,44 @@
+BD
+- dados
+   {
+    - json
+    - string
+    - number
+    - integer
+    - float
+    - double
+    - blob
+    - coordenadas
+    - bigInt
+    - date
+    - dateTime
+    - timezone
+    - 
+   } etc
+
+   dados estão armazenados -> persitentes (Ele não remove, independe do backend)
+
+   tipos:
+    - Relacionais (Postgres, Oracle, MariaDB, MYSQL)
+        * tabelas
+        * PK (Primary Key)
+        * FK (Foreign Key)
+         montar os relacionamentos
+    - Não relacionais -> NoSQL (MongoDB, DynamoDB)
+        *documentos (json)
+
+Acesso
+  autenticação (usuario e senha)
+  autorização (roles -> papeis do usuario   Ex: consulta, insert, adm )
+
+  Backend (-> DRIVER ) BD
+  O BD fornece um driver para o backend fazer uma comunicação.
+
+  Endereço do BD (IP, Porta, usuário, senha)
+  
+
+SQL - Schema Query Language
+
+PgAdmin - Sistema que dá condição de gerenciar os bancos
+
+Postgres - Tipo de Banco que trabalha com SQL
